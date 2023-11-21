@@ -2,18 +2,65 @@
 @import url(normalize.min.css);
 @import url(reset.css);
 
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
 /* *********************************** */
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
+.header {
+  width: 100%;
+  height: 112px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--footer);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.gall {
+  width: 1200px;
+  height: 100vh;
+  /* !!!!!! */
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  gap: 10px;
+}
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "bask";
+  src: url("../font/baskerville.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "rbto";
+  src: url("../font/roboto.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "rbtoBlack";
+  src: url("../font/robotoBlack.woff2") format("woff2");
 }
 
 /* ******************************** */
 
 /* Colores */
+:root {
+  --bg: #ffffff;
+  --footer: #f7f5f0;
+}
 
 /* ******************************** */
